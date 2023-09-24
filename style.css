@@ -1,0 +1,108 @@
+.table {
+  background-image: linear-gradient(#2ca81e,#eeece6);
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  font-family: cursive;
+}
+.h1 {
+    color: beige;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    font-family: Georgia;
+    font-size: large;
+    background:#eff45e ;
+}
+ul li{
+    position: absolute;
+    border: 1.5px;
+    width: 35px;
+    height:35px;
+    list-style: none;
+    opacity: 0%;
+    animation: square 10s linear infinite;
+    background: ;
+}
+.square li {
+    top: 50vh;
+    left: 45vw;
+      
+}
+.square li:nth-child(2) {
+    top: 80vh;
+    left: 15vw;
+    animation-delay: 2s;
+}   
+.square li:nth-child(3) {
+    top: 80vh;
+    left: 90vw;
+    animation-delay: 4s;
+}
+.square li:nth-child(4) {
+    top: 15vh;
+    left: 75vw;
+    animation-delay: 6s;
+}      
+.square li:nth-child(5) {
+    top: 15vh;
+    left: 15vw;
+    animation-delay: 8s;
+}
+@keyframes square
+{
+    0%
+    {
+        transform: scale(0) rotateY(0deg);
+        opacity: 1;
+    }
+    100%
+    {
+        transform: scale(5) rotateY(1000deg);
+        opacity: 0;
+    }
+}
+.circles  li{
+    bottom: 0;
+    left:15vw;
+    animation: circles 10s linear infinite;
+}
+.circles li :nth-child(2){
+    left:35vw;
+    animation-delay: 2s;
+}
+.circles li :nth-child(3){
+    left:55vw;
+    animation-delay: 4s;
+}
+.circles li :nth-child(4){
+    left:75vw;
+    animation-delay: 6s;
+}
+.circles li :nth-child(5){
+    left:95vw;
+    animation-delay: 8s;
+}
+@keyframes circle
+{
+    0%
+    {
+        transform: scale(0) rotateY(0deg);
+        opacity: 1;
+        bottom: 0;
+        border-radius: 0;
+    }
+    100%
+    {
+        transform: scale(5) rotateY(1000deg);
+        opacity: 0;
+        bottom: 90vh;
+        border-radius: 50%;
+    }
+}
+
+
+
+
+
+
